@@ -10,7 +10,7 @@ class Tab3Screen extends StatefulWidget {
 }
 
 class _Tab3ScreenState extends State<Tab3Screen> {
-  double _volume = 0.65;
+  double _volume = 0.9;
   bool _notifs = true;
 
   @override
@@ -45,7 +45,7 @@ class _Tab3ScreenState extends State<Tab3Screen> {
                   ],
                 ),
                 const Divider(height: 24),
-                const Text('Sensitivity Level', style: TextStyle(fontSize: 15)),
+                const Text('Countdown Timer Speed', style: TextStyle(fontSize: 15)),
                 Slider(
                   value: _volume,
                   activeColor: AppTheme.secondaryColor,
@@ -63,11 +63,11 @@ class _Tab3ScreenState extends State<Tab3Screen> {
             ),
             child: Column(
               children: [
-                _buildSettingTile(Icons.tune, 'Advanced Parameters', 'Fine-tune engine presets'),
+                _buildSettingTile(Icons.tune, 'Hardcore Survival Mode', 'Optimized system engine'),
                 const Divider(),
-                _buildSettingTile(Icons.cloud_sync, 'Cloud Auto-Backup', 'Last synced today at 14:20'),
+                _buildSettingTile(Icons.cloud_sync, 'Time Penalty System', 'Real-time synchronization'),
                 const Divider(),
-                _buildSettingTile(Icons.lock_clock, 'Security Interval', '15 min session timeout'),
+                _buildSettingTile(Icons.shield_outlined, 'Global Leaderboard Rank', 'Active security protocol'),
               ],
             ),
           ),

@@ -36,10 +36,10 @@ class _Tab2ScreenState extends State<Tab2Screen> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                _buildFilterChip('All', 0),
-                _buildFilterChip('Active', 1),
-                _buildFilterChip('Popular', 2),
-                _buildFilterChip('Archived', 3),
+                _buildFilterChip('Multiply', 0),
+                _buildFilterChip('Divide', 1),
+                _buildFilterChip('Square Root', 2),
+                _buildFilterChip('Algebra', 3),
               ],
             ),
           ),
@@ -70,7 +70,7 @@ class _Tab2ScreenState extends State<Tab2Screen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Dual Item #${idx + 101}', style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+                      Text(const ['Rapid Multiplication 48x7', 'Mental Square 24^2', 'Prime Division 871/13', 'Quick Fraction 5/8 + 1/3', 'Polynomial Factor 2x^2'][idx], style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
                       const SizedBox(height: 4),
                       Text('Category: Tier ${idx + 1} • Updated 2h ago', style: const TextStyle(color: Colors.white60, fontSize: 12)),
                     ],
